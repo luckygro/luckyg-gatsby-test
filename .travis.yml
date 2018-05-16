@@ -1,0 +1,12 @@
+sudo: false
+language: node_js
+node_js:
+- stable
+script:
+- npm test
+after_success:
+- npm run report-coverage
+deploy:
+  provider: firebase
+  token:
+    secure: KkJqCTCe/CKHKU/9vCSyAjzxaXIgqddc2A96PI8THHfwHgp2ziKSuW8oPg93lG6u6OP+awUFlnz6UmB8b3Kv9T/WAX7wEI9Ax5BIwxOG37kJENse0wCSjIYXZhy21QeSAFIXIxFRm6NtLqliWbWNMTY5IcXot07LkC8ALiW5YGtglCR5yaIgHwekv9RALjpqwCpeu1SiwgrhkjRej69bAwXYJkM6X7t2APOgKesjvem2WoAdfpNYZ2/baRsEIMYCo75sNv8HIzNeBxmOE8xkv+iffjJqiyaU7tuFj60tXaA+RuKagFfFF6llDJvE/20DH8Z4H7fK+cqttWot0R/0rVJ+5DQDpoX+ijsfEq+ml344Q649QAVUTvdBtH/6rSkvInPctXuZnIEkiz9Uy5MRtt/9/tmj02tVHwNyujpFcotjRYXMDixqhgN3sp+f1MAK9PBcrDC6R+C3kDAdszOlh5nyUeFivhX6X3E1ow0I8slQhaoeel8PmpP0bT3sgJFr5g3fWy+cR4t3E6E6CUCZPBMxj+SFhLM4KhCi6NKswnc8Q27rACQGFAFqLPmkEEtshknJuoOUq5gORIDUw/U0wtygEIUm2Dt2bfXWLL6G+pLZ6feTo9liY21t8HpJY4B/6E+e1sCjm1iZBTgEP0rWGS2jbHGYAPurr5wQdwhta0I=
