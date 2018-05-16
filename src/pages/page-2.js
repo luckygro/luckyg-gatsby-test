@@ -8,6 +8,7 @@ const SecondPage = () => (
     <p>Happy you are here</p>
     <p>one more line</p>
     <p>and one more</p>
+    <p>fifth line</p>
     <Link to="/">Go back to the homepage</Link>
   </div>
 )
