@@ -9,6 +9,7 @@ deploy:
     secure: "h5PgZNvWG0+/pRYiEcRUk8vSXEkj61SKbV0PR5SfuU1fB+1eXoFmKJ0FPe3vY1kdgg3rfn28RspULNJJqvPo+eXHtyRjWZrUvnWtwvOJhF8Ih6HP/y+mLx6PgRJsGpnSDV/Apn9+A2Ptn2YULav/jE4c9acFH4uPUAQ99mixx2sBjCvc6P1UK3HoAPZXBsj4eppQRHlp4ef/4uXlFqTXvK6PUiOYv1Ssc76tNwUonZaogzMLkvc33tS5rxzgQsSN+pVBHPHfmuSCeVNuTLhR84h3e2yt/gIFSYvu5ZCkvF3dkSGgcoHOWgOqgBB78dMclFt3xW3dpUVkl8VbAJWdZntWGSu4lu+UZEM6u7hSnX3umJGz/2Mhg9OH6j/sljwQVnxPG31FZV7Vg1J0rskzsZGyQAZhl13B971SzQ+Ugq4E/3pWWVBJq8LvDYOnhbGR+CIiCOxZkEkrmru90P1eyGsEs+82c3OIQN7UPedmL3r4+PW4YA6UB+UqDPwvXkCNhuDYzwVyWo3IkSJ1+xOtmLnUcrUnA6QcAcHh2U5sP7i+smjwhb08mw4y6OYJHItQSOJX5MvwvAR+EwPJWMwN5j3w6WjGszNtdtY1FDSvQ54JrTjNxdkAc1TmCTXg0aXzUm5XrwHEP5e77OjMDT+fmctwST4LavFXT6gUtz02XRU="
 before_script:
   - "npm i -g gatsby"
+  - "npm i gh-pages"
   - "npm i"
 script:
   - "npm run test"
