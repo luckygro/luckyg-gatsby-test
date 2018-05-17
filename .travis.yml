@@ -3,8 +3,7 @@ node_js:
 - "node"
 deploy:
   provider: firebase
-  token:
-    secure: "Njy7qC3qTf14IFmZ1HRoOvVzxgHtWLaur4X5fQPzNMuIC/0Qqrgr6Ywr65WWiIzZxsZz5N+ZGj0/AMK7iuLf8vfccPePPmPHDJYBf4feVSpSmHT6bbuTraal5Ze0F0D8wNuCZ7P75MY0TxGSV+Z/JW6MItFl+josjFeQLex28lDAuDIgxDYeIy7LZL59rxC44fgcHs4UjuuI1YVUqaGIm5/xRePUElrdiTdKkdRNnfUtfOvTHU6S54jL2Mae9EpTW6BMTmeE5nKGrzXqoLMdkvk/svJrMiNONBb+ggqn3MJjyJCqutTt7cHB+MGWUTeaNz98MDGc1Bmn4iH8bqLfAmGD9SUUmSUIEq5eVUWarzOw8cti4Ast0tGPoLB+j26gcVtRL8gQ5/xqgeIcUDuc8X+S6weW3UxDXRNiMu78DQCRZDg2hQJvPUaylX7JrbDlmW8+kn0OBjmfnh4IwZ+/uyXyHvlY2KVwoL5SCzZqgPylGmYGe0ow5MM9yfFUbu2GTI93KeziT7soe81HpLQkT91waWvLnlOMTjIoXXzo/PqjNALZGkWki3HcovWzmX/Kcs9UemeP0KGtc1obisaT3KNtsyCqUOk+K1jYgD5lVDKyDDAUusV09jpRY11OnfPXBI3LDNn31G4nI4x9XqKEsPqJF3WYHSjPS/uYC2yb/EI="
+  token: $FIREBASE_TOKEN
 before_script:
   - "npm i gatsby"
   - "npm i gh-pages"
