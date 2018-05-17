@@ -5,5 +5,11 @@ deploy:
   provider: firebase
   token: $FIREBASE_TOKEN
   skip_cleanup: true
+before_script:
+  - "npm i gatsby"
+  - "npm i gh-pages"
+  - "npm i"
 script:
+  - "npm run test"
+after_success:
   - "npm run deploy"
