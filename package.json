@@ -4,9 +4,10 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.247",
+    "gatsby": "^1.9.261",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",
+    "gh-pages": "^1.1.0",
     "react-helmet": "^5.2.0",
     "travis-ci": "^2.1.1"
   },
@@ -17,13 +18,13 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "test": "echo \"no test specified\" && exit 0",   
+    "test": "echo \"no test specified\" && exit 0",
     "format": "prettier --write 'src/**/*.js'",
     "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
     "standard": "standard index.js",
-    "preDeploy": "gatsby build --prefix-paths",
+    "preDeploy": "gatsby build",
     "deploy": "npm run preDeploy && gh-pages -d public"
-},
+  },
   "devDependencies": {
     "ava": "^0.16.0",
     "co-exec": "^1.0",
