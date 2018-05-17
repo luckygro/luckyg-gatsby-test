@@ -4,6 +4,7 @@ node_js:
 deploy:
   provider: firebase
   token: $FIREBASE_TOKEN
+  skip_cleanup: true
 before_script:
   - "npm i gatsby"
   - "npm i gh-pages"
