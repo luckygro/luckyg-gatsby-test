@@ -5,3 +5,10 @@ deploy:
   provider: firebase
   token:
     secure: "Q62E+V8sXFfwKV84yKAP/4SUvtwliJ3lYYyhOgZB74ZL3EERZn/IVALFVoOAHWVZ0oNkLiqGtWnZ2GEPKKDQR6xTEtsTzQ47bbC6zF9GwSnQxtvfnXR/jb46pbABD6sjbcGc1gf9KIllKxPufEC50iRiGld03JNuK26xpBey2BrIrGnZiqXaNbs8eSrn9HhoSKQxoEzuJCGdOgc2BQmgHcxjXzuTJTKzzpYJElHScVlKE30v6z4mm7+ULVCc0BLAZ4NGrfgZeniNM7WPC0vM6AyxC3BNjHHYjY+d/SFOOTRe3j95NjJ6u2j9Dx97gLQlgWgocVluRUIy6UGUFHyTbOPokxQaPpjuySpfeWUdmR9w61XrrmgJF3VteBvTjCp4hVfzuJE/it+3R3DwMhGQ117QuyTcCvN+ujGRxlm6y4FP1oQIcTct0f+6b9J3WaFMP1hVQCQG/rry9Dx+R0qc8X7IMFsUfhAZElVorZ70ZSqHnCfauAc15eSxoMkE6W+M1qxOaALOmFCrmyS9CHnUOubDwNvK2W5sbCgIPf1voR02Uelq3wi7MP5MkiVhUcNKZ48zksxLjrgFoA0YWnUCHfAaQGfac7brhhLQQX0ycPHOaprXaN5p9DsM++8g1zLNR3VD8YfAxw1MoMm+SJrd0onEMH11wcJu5RsFEQtynIs="
+before_script:
+  - "npm i -g gatsby"
+  - "npm i"
+script:
+  - "npm run test"
+after_success:
+  - "npm run deploy"
